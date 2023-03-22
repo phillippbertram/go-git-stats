@@ -103,6 +103,7 @@ func getChangedLinesByAuthorForFile(file string) (AuthorsLocMap, error) {
 		}
 
 		author := r.FindString(line)
+		author = strings.Trim(author, "<>")
 		// fmt.Printf("line: %s\n", line)
 		// fmt.Printf("author: %v\n", author)
 		// fmt.Println()

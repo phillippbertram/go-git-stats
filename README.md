@@ -16,6 +16,8 @@ $ make install
 
 ## Usage
 
+Currently `go-git-stats` only prints out the number of lines of code (LOC) for each author in the repository.
+
 ```bash
 $ go-git-stats
 -----------------------+-------+------------+
